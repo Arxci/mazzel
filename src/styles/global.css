@@ -1,0 +1,50 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0rem;
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.section {
+	z-index: 2;
+	background-color: #070707;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 80px 4%;
+	display: flex;
+	position: relative;
+}
+
+h1 {
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 120px;
+	font-weight: 300;
+	line-height: 130px;
+}
+
+audio,
+canvas,
+progress,
+video {
+	vertical-align: baseline;
+	display: inline-block;
+}
+
+video {
+	object-fit: contain;
+	overflow-clip-margin: content-box;
+	overflow: clip;
+}
