@@ -1,7 +1,21 @@
 import React from 'react'
 import styles from './Hero.module.css'
+import backgroundImage from '../assets/images/Hero/HeroPoster.jpg'
+import backgroundVideo from '../assets/images/Hero/HeroVideo.mp4'
+import useScrollPosition from '../hooks/useScrollPosition'
 
 const Hero = () => {
+	const scrollPosition = useScrollPosition()
+
+	// [0, 300] -> [1, 0] map opacity from scroll position to 1 -> 0
+	const oldRange = [0, 300]
+	const newRange = [1, 0]
+	const newValue =
+		((scrollPosition - oldRange[0]) * (newRange[1] - newRange[0])) /
+			(oldRange[1] - oldRange[0]) +
+		newRange[0]
+	const opacity = Math.min(Math.max(newValue, 0), 1)
+
 	return (
 		<section className={`${styles.hero} section`}>
 			<div className={styles['hero-wrapper']}>
@@ -17,12 +31,19 @@ const Hero = () => {
 					muted
 					playsInline
 					style={{
-						backgroundImage:
-							'url("https://assets.website-files.com/62a16e7b45387164d9b2945c/62a17e31eba3c00c62173a37_Hero trimmed-poster-00001.jpg")',
+						backgroundImage: `url(${backgroundImage})`,
 					}}
 				>
-					<source src="https://assets.website-files.com/62a16e7b45387164d9b2945c/62a17e31eba3c00c62173a37_Hero trimmed-transcode.mp4" />
+					<source src={backgroundVideo} />
 				</video>
+			</div>
+			<div className={styles['scroll-container']} style={{ opacity: opacity }}>
+				<div className={styles['scroll-wrapper']}>
+					<div className={styles.scroll}>
+						<div className={styles['scroll-line']} />
+					</div>
+					<p>Scroll Down</p>
+				</div>
 			</div>
 		</section>
 	)

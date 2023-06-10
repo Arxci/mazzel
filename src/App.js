@@ -9,6 +9,7 @@ function App() {
 			<main>
 				<Hero />
 			</main>
+			<section className={'section'}>a</section>
 		</div>
 	)
 }
