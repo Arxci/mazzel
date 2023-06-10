@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/images/MainHeader/Logo.png'
+import logo from '../../assets/images/Logos/LogoDark.png'
 import styles from './MainHeader.module.css'
 
 const MainHeader = () => {
