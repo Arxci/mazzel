@@ -1,6 +1,7 @@
 import styles from './App.module.css'
 import MainHeader from './components/MainHeader/MainHeader'
 import Hero from './sections/Hero'
+import Intro from './sections/Intro'
 
 function App() {
 	return (
@@ -8,8 +9,8 @@ function App() {
 			<MainHeader />
 			<main>
 				<Hero />
+				<Intro />
 			</main>
-			<section className={'section'}>a</section>
 		</div>
 	)
 }

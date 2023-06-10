@@ -1,0 +1,22 @@
+.intro {
+	min-height: 80vh;
+}
+
+.wrapper {
+	width: 850px;
+	text-align: center;
+}
+
+@media (max-width: 991px) {
+	.wrapper {
+		width: auto;
+	}
+}
+
+@media (max-width: 767px) {
+	.intro {
+		min-height: auto;
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+}
