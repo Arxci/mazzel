@@ -83,6 +83,11 @@ img {
 	line-height: 1.2em;
 }
 
+.large-paragraph {
+	font-size: 2.6em;
+	line-height: 1.3em;
+}
+
 @media (max-width: 991px) {
 	.section {
 		padding-top: 50px;
@@ -102,6 +107,11 @@ img {
 	.x-large-paragraph {
 		font-size: 32px;
 		line-height: 44px;
+	}
+
+	.large-paragraph {
+		font-size: 24px;
+		line-height: 34px;
 	}
 
 	h2 {

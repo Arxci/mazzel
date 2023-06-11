@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './Showcase.module.css'
 import showcase_01 from '../../assets/images/About/Showcase_01.jpeg'
 import showcase_02 from '../../assets/images/About/Showcase_02.jpeg'
+import features_video from '../../assets/images/Hero/HeroVideo.mp4'
+import backgroundImage from '../../assets/images/Hero/HeroPoster.jpg'
 
 const Showcase = () => {
 	return (
@@ -28,6 +30,32 @@ const Showcase = () => {
 					alt="showcase"
 				/>
 			</a>
+			<div className={styles['feature-video-wrapper']}>
+				<div className={styles['feature-subtext']}>
+					<p className="large-paragraph">
+						With
+						<em> top of the line </em>
+						features, KBOX is the experience you are
+						<em> looking for </em>
+						from a bicycle
+					</p>
+				</div>
+				<div className={styles['feature-video']}>
+					<div className={styles['video-wrapper']}>
+						<video
+							autoPlay
+							loop
+							muted
+							playsInline
+							style={{
+								backgroundImage: `url(${backgroundImage})`,
+							}}
+						>
+							<source src={features_video} />
+						</video>
+					</div>
+				</div>
+			</div>
 		</div>
 	)
 }
