@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './Features.module.css'
+import styles from './Gallery.module.css'
 import feature_01 from '../../assets/images/About/Feature_01.jpeg'
 import feature_02 from '../../assets/images/About/Feature_02.jpeg'
 import feature_03 from '../../assets/images/About/Feature_03.jpeg'
 
-const Features = () => {
+const Gallery = () => {
 	return (
 		<div className={styles.features}>
 			<h2 className={styles.title}>Satisfaction Guaranteed</h2>
@@ -55,4 +55,4 @@ const Features = () => {
 	)
 }
 
-export default Features
+export default Gallery

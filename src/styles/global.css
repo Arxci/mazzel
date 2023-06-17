@@ -97,6 +97,30 @@ img {
 	line-height: 1.3em;
 }
 
+.cta-arrow-leg {
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	position: relative;
+}
+
+.arrow-wing,
+.arrow-wing_2 {
+	width: 15px;
+	height: 3px;
+	background-color: #fff;
+	position: absolute;
+	top: 0%;
+	bottom: auto;
+	left: auto;
+	right: 0%;
+	transform: translate(3px, -5px) rotate(43deg);
+}
+
+.arrow-wing_2 {
+	transform: translate(3px, 4px) rotate(-43deg);
+}
+
 @media (max-width: 991px) {
 	.section {
 		padding-top: 50px;
