@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './Gallery.module.css'
-import feature_01 from '../../assets/images/About/Feature_01.jpeg'
-import feature_02 from '../../assets/images/About/Feature_02.jpeg'
-import feature_03 from '../../assets/images/About/Feature_03.jpeg'
+import gallery_01 from '../../assets/images/About/Gallery_01.jpeg'
+import gallery_02 from '../../assets/images/About/Gallery_02.jpeg'
+import gallery_03 from '../../assets/images/About/Gallery_03.jpeg'
 
 const Gallery = () => {
 	return (
@@ -19,7 +19,7 @@ const Gallery = () => {
 				<a href="/" className={styles.link}>
 					<div
 						className={styles['card-image']}
-						style={{ backgroundImage: `url(${feature_03})` }}
+						style={{ backgroundImage: `url(${gallery_03})` }}
 					/>
 				</a>
 				<div className={styles['card-content']}>
@@ -31,7 +31,7 @@ const Gallery = () => {
 				<a href="/" className={styles.link}>
 					<div
 						className={styles['card-image']}
-						style={{ backgroundImage: `url(${feature_02})` }}
+						style={{ backgroundImage: `url(${gallery_02})` }}
 					/>
 				</a>
 				<div className={styles['card-content']}>
@@ -43,7 +43,7 @@ const Gallery = () => {
 				<a href="/" className={styles.link}>
 					<div
 						className={styles['card-image']}
-						style={{ backgroundImage: `url(${feature_01})` }}
+						style={{ backgroundImage: `url(${gallery_01})` }}
 					/>
 				</a>
 				<div className={styles['card-content']}>

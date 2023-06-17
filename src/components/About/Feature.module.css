@@ -9,6 +9,10 @@
 	grid-area: span 1 / span 3 / span 1 / span 3;
 }
 
+.feature:hover .feature-name-wrap {
+	transform: translateX(20px);
+}
+
 .first {
 	margin-top: 60px;
 }
@@ -16,6 +20,7 @@
 .feature-name-wrap {
 	align-items: center;
 	display: flex;
+	transition: transform 250ms ease-out;
 }
 
 .name {
@@ -41,7 +46,6 @@
 	left: 0%;
 	right: 0%;
 	transform: translate(20rem);
-	background-color: red;
 }
 
 @media (max-width: 991px) {
@@ -54,6 +58,11 @@
 		width: 50%;
 		font-size: 20px;
 	}
+
+	.image {
+		width: 300px;
+		height: 200px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -63,5 +72,19 @@
 
 	.description {
 		width: 100%;
+	}
+
+	.image {
+		width: 100%;
+		height: 250px;
+		margin-top: 1rem;
+		position: static;
+		transform: none;
+	}
+}
+
+@media (max-width: 479px) {
+	.image {
+		height: 220px;
 	}
 }
