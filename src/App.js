@@ -4,6 +4,8 @@ import About from './sections/About'
 import Hero from './sections/Hero'
 import Intro from './sections/Intro'
 import Logos from './sections/Logos'
+import Signup from './sections/Signup'
+import Store from './sections/Store'
 
 function App() {
 	return (
@@ -14,6 +16,8 @@ function App() {
 				<Intro />
 				<Logos />
 				<About />
+				<Store />
+				<Signup />
 			</main>
 		</div>
 	)
