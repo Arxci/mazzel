@@ -3,25 +3,28 @@ import { motion, transform } from 'framer-motion'
 import styles from './Feature.module.css'
 import useWindowSize from '../../hooks/useWindowSize'
 
-const getRelativeMousePos = (event, referenceElement) => {
+const getRelativeImagePos = (event, referenceElement) => {
 	const target = referenceElement
 	const rect = target.getBoundingClientRect()
 	const width = referenceElement.offsetWidth
+	const height = referenceElement.offsetHeight
 
 	const newPos = {
 		x: event.clientX - rect.left,
 		y: event.clientY - rect.top,
 	}
 
+	const minWidth = rect.left + 300
+	const maxWidth = Math.min(rect.right - 400, 575)
+	const minHeight = -30
+	const maxHeight = 15
+
 	const widthTransformer = transform(
 		[0, width],
-		[
-			rect.left + 300,
-			Math.max(rect.left + 300, Math.min(rect.right - 400, 575)),
-		]
+		[minWidth, Math.max(minWidth, maxWidth)]
 	)
 
-	const heightTransformer = transform([0, 100], [-30, 15])
+	const heightTransformer = transform([0, height], [minHeight, maxHeight])
 
 	const transformedPos = {
 		x: widthTransformer(newPos.x),
@@ -33,7 +36,7 @@ const getRelativeMousePos = (event, referenceElement) => {
 
 const Feature = ({ name, description, image, id }) => {
 	const [isMouseOver, setIsMouseOver] = useState(false)
-	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+	const [imageOffset, setImageOffset] = useState({ x: 0, y: 0 })
 	const container = useRef()
 	const isFirst = id === 0
 	const windowSize = useWindowSize()
@@ -45,13 +48,13 @@ const Feature = ({ name, description, image, id }) => {
 
 	const imageAnimations = {
 		hidden: {
-			x: mousePosition.x,
-			top: mousePosition.y,
+			x: imageOffset.x,
+			top: imageOffset.y,
 			opacity: 0,
 		},
 		visible: {
-			x: mousePosition.x,
-			top: mousePosition.y,
+			x: imageOffset.x,
+			top: imageOffset.y,
 			opacity: 1,
 		},
 	}
@@ -66,7 +69,7 @@ const Feature = ({ name, description, image, id }) => {
 
 	useLayoutEffect(() => {
 		const mouseMoveHandler = (e) => {
-			setMousePosition(getRelativeMousePos(e, container.current))
+			setImageOffset(getRelativeImagePos(e, container.current))
 		}
 
 		window.addEventListener('mousemove', mouseMoveHandler)
