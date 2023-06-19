@@ -10,11 +10,10 @@ const Showcase = () => {
 		<div className={styles.showcase}>
 			<h2 className={styles.title}>Lasting Performance</h2>
 			<p className={styles.subtext}>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-				varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-				ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-				Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut
-				sem vitae risus tristique posuere.
+				KBOX is an evolutionary company creating innovative bicycles for casual
+				and hard core bicyclists. With an ergonomic design and top of line
+				technology, we have exactly what you are looking for. Our bicycles are
+				long lasting and comfortable.
 			</p>
 			<a href="/" className={styles['showcase-image-wrapper-01']}>
 				<div

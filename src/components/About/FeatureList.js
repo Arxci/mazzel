@@ -10,37 +10,37 @@ import feature_05 from '../../assets/images/About/Feature_05.jpeg'
 const DUMMY_FEATURES = [
 	{
 		id: 0,
-		name: 'FEATURE NAME',
+		name: 'BRAKES',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros.',
+			'Brakes are the most important feature in a bicycle. Our bicycles come installed with some of the safest brakes to date. Perfect for rain and snow.',
 		image: feature_01,
 	},
 	{
 		id: 1,
-		name: 'FEATURE NAME',
+		name: 'ELECTRIC',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros.',
+			'Our electric bicycles are some of our most popular ones. Great for getting around a city.',
 		image: feature_02,
 	},
 	{
 		id: 2,
-		name: 'FEATURE NAME',
+		name: 'SAFETY',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros.',
+			'Our bicycles come with attachments for review and front lights, which makes our bicycles extremely safe for nighttime rides.',
 		image: feature_03,
 	},
 	{
 		id: 3,
-		name: 'FEATURE NAME',
+		name: 'ERGONOMIC',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros.',
+			'Our ergonomic designs make our bicycles comfortable for any rider under any situation.',
 		image: feature_04,
 	},
 	{
 		id: 4,
-		name: 'FEATURE NAME',
+		name: 'MULTI USE',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros.',
+			'Our bicycles are great for on road use and off road use, such as the grass in a park!',
 		image: feature_05,
 	},
 ]
@@ -50,9 +50,8 @@ const FeatureList = () => {
 		<div className={styles.feature}>
 			<h2 className={styles.title}>Features worth mentioning</h2>
 			<p className={styles.description}>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-				varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-				ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+				KBOX is known as the most innovative bicycle company to date. Creating
+				record breaking bikes for ANY USE, ANYWHERE, ANYTIME!
 			</p>
 			{DUMMY_FEATURES.map((feature) => (
 				<Feature

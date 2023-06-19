@@ -1,3 +1,7 @@
 .about {
 	padding-bottom: 0px;
 }
+
+.about::before {
+	height: calc(100% + 100px);
+}

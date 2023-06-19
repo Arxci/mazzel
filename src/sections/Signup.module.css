@@ -4,11 +4,18 @@
 	background-attachment: fixed;
 	height: 700px;
 	min-height: 40vh;
+	width: 100%;
+	max-width: none;
+}
+
+.signup:before {
+	background-color: transparent;
 }
 
 .form-wrapper {
 	margin: 0 0 15px;
 	width: 60%;
+	max-width: 150rem;
 }
 
 .inputs {

@@ -14,9 +14,10 @@
 	max-width: 100%;
 	display: inline-block;
 	width: 100%;
-	min-height: 65vh;
+	height: 65vh;
 	position: relative;
 	overflow: hidden;
+	max-height: 800px;
 }
 
 .image {

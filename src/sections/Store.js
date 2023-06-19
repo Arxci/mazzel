@@ -9,15 +9,15 @@ const DUMMY_ITEMS = [
 	{
 		id: 0,
 		title: 'KBOX BLACK',
-		description: 'Lorem ipsum dolor sit amet, consectetur.',
-		price: '$2,899',
+		description: 'The perfect bike for any situation.',
+		price: '$1,500.00',
 		image: black,
 	},
 	{
 		id: 1,
-		title: 'KBOX WHITE',
-		description: 'Lorem ipsum dolor sit amet, consectetur.',
-		price: '$2,899',
+		title: 'KBOX ELECTRIC',
+		description: 'An electric bike. Great for city use.',
+		price: '$2,899.00',
 		image: white,
 	},
 ]
@@ -46,7 +46,7 @@ const DUMMY_INFORMATION = [
 const Store = () => {
 	return (
 		<section className={`${styles.store} section`}>
-			<h2 className={styles.title}>Choose black or white</h2>
+			<h2 className={styles.title}>Choose your bike</h2>
 			{DUMMY_ITEMS.map((item) => (
 				<Card
 					key={item.id}

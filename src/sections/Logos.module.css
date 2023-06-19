@@ -2,6 +2,10 @@
 	background-color: #141414;
 }
 
+.logos::before {
+	background-color: #141414;
+}
+
 .wrapper {
 	grid-row-gap: 16px;
 	grid-column-gap: 30px;

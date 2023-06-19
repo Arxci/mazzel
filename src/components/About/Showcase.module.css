@@ -25,7 +25,8 @@
 	max-width: 100%;
 	display: inline-block;
 	width: 100%;
-	min-height: 65vh;
+	height: 65vh;
+	max-height: 800px;
 	position: relative;
 	overflow: hidden;
 }

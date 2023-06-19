@@ -9,11 +9,9 @@ const Gallery = () => {
 		<div className={styles.features}>
 			<h2 className={styles.title}>Satisfaction Guaranteed</h2>
 			<p className={styles.subtext}>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-				varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-				ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-				Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut
-				sem vitae risus tristique posuere.
+				With over 1,000 reviews and an average 4.5 stars, KBOX guarantees
+				satisfaction with every bicycle that leaves our shelves. After 30 days,
+				if you're not satisfied, you can return the product with a 100% refund.
 			</p>
 			<div className={styles['card-01']}>
 				<a href="/" className={styles.link}>
@@ -24,7 +22,7 @@ const Gallery = () => {
 				</a>
 				<div className={styles['card-content']}>
 					<h3>Power</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.</p>
+					<p>Designed for rough terrain and high speeds.</p>
 				</div>
 			</div>
 			<div className={styles['card-02']}>
@@ -36,7 +34,7 @@ const Gallery = () => {
 				</a>
 				<div className={styles['card-content']}>
 					<h3>Sustainability</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.</p>
+					<p>Comfortable build makes it great for long rides.</p>
 				</div>
 			</div>
 			<div className={styles['card-03']}>
@@ -47,8 +45,8 @@ const Gallery = () => {
 					/>
 				</a>
 				<div className={styles['card-content']}>
-					<h3>Tenacity</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.</p>
+					<h3>Ergonomic</h3>
+					<p>Great for any rider, any age.</p>
 				</div>
 			</div>
 		</div>
