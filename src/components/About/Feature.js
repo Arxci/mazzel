@@ -13,9 +13,9 @@ const getRelativeImagePos = (event, referenceElement) => {
 		x: event.clientX - rect.left,
 		y: event.clientY - rect.top,
 	}
-
-	const minWidth = rect.left + 300
-	const maxWidth = Math.min(rect.right - 400, 575)
+	console.log(rect.left)
+	const minWidth = 400
+	const maxWidth = Math.min(rect.right - 400, width - 1200)
 	const minHeight = -30
 	const maxHeight = 15
 
